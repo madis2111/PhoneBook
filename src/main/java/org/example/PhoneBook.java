@@ -11,6 +11,7 @@ public class PhoneBook {
     }
 
     public int addNumber(int number) {
-        return 0;
+        list.add(number);
+        return number;
     }
 }
