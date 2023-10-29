@@ -14,4 +14,8 @@ public class PhoneBook {
         map.put(name, number);
             return map.size();
     }
+
+    public String findByNumber(int number) {
+        return null;
+    }
 }
