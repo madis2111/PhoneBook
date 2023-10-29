@@ -12,6 +12,6 @@ public class PhoneBook {
 
     public int add(String name, int number) {
         map.put(name, number);
-            return 0;
+            return map.size();
     }
 }
