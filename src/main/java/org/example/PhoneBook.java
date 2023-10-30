@@ -27,4 +27,8 @@ public class PhoneBook {
     public int findByName(String name) {
         return map.get(name);
     }
+
+    public void printAllNames() {
+        System.out.println(map.keySet());
+    }
 }
