@@ -18,4 +18,11 @@ public class PhoneBookTest {
         String name = book.findByNumber(1234567);
         Assert.assertEquals("Ivan", name);
     }
+
+    @Test
+    public void findByNameTest() {
+        PhoneBook book = new PhoneBook();
+        book.add("Ivan", 1234567);
+        Assert.assertEquals(1234567, book.findByName("Ivan"));
+    }
 }
