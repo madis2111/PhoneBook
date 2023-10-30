@@ -7,13 +7,14 @@ public class PhoneBookTest {
 
     @Test
     public void addTest() {
-        org.example.PhoneBook book = new org.example.PhoneBook();
+        PhoneBook book = new PhoneBook();
         int size = book.add("Ivan", 1234567);
         Assert.assertEquals(1, size);
     }
     @Test
     public void findByNumberTest() {
-        org.example.PhoneBook book = new org.example.PhoneBook();
+        PhoneBook book = new PhoneBook();
+        book.add("Ivan", 1234567);
         String name = book.findByNumber(1234567);
         Assert.assertEquals("Ivan", name);
     }
